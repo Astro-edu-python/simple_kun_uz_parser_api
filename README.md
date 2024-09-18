@@ -6,10 +6,10 @@
 * Clone repository
 ```shell
 # ssh
-git clone git@github.com:SaD-Pr0gEr/django_basic_project.git
+git clone git@github.com:Astro-edu-python/simple_kun_uz_parser_api.git
 
 # or https
-git clone https://github.com/SaD-Pr0gEr/django_basic_project.git
+git clone https://github.com/Astro-edu-python/simple_kun_uz_parser_api.git
 ```
 
 * Rename project name(and description[OPTIONAL]) in `pyproject.toml` to actual project name
@@ -58,3 +58,7 @@ It's config file for gunicorn, it will be used in `site.supervisor.conf`
 * set `directory` to full path to project directory
 * set `user` to actual username which running these processes
 * `stdout_logfile` is for all logs incoming to wsgi server, create some log file and set full path 
+
+### CELERY
+* Run worker with command `celery -A core worker -l INFO`
+* Run beat with command `celery -A core beat -l INFO`
