@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
 
-    'apps.api.v1.main.apps.MainConfig'
+    'apps.api.v1.main'
 ]
 
 MIDDLEWARE = [
@@ -123,3 +123,7 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+KUN_UZ_MAIN_URL = 'https://kun.uz'
+
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
